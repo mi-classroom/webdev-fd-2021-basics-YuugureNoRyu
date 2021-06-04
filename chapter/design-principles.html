@@ -8,6 +8,10 @@
     <title>Design-priciples</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         cite {
             font-size: smaller;
         }
@@ -15,10 +19,11 @@
         p {
             text-align: left;
             word-wrap: inherit;
-            
+
         }
 
-        h1,h2 {
+        h1,
+        h2 {
             font-weight: bold;
             color: gray;
         }
@@ -65,97 +70,139 @@
             width: 50rem;
             font-weight: bolder;
             text-align: center;
+            color: goldenrod;
         }
 
         figcaption {
-                        font-style: italic;
+            font-style: italic;
             align-self: center;
         }
 
-        img {
-            align-self: right;
-            align-content: flex-end;
-        }  
-        footer{
-            align-self:center ;
+        footer {
+            align-self: center;
 
-        }    
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 
 
 </head>
 
 <body>
-    <h1>Design Principles</h1>
+    <nav>
+<ul>
+    <li><a href="#design-principles">Design Principles</a></li>
+    <li><a href="">Design Methodes</a></li>
+    <li><a href="#Kommentar">Kommentar</a></li>
+</ul>
+    </nav>
+    <main>
+    <h1>Theory</h1>
 
-    <div>
-        The challenge is to develop an application that tries to increase the user’s participation
+    <h2 id="design-principles">Design Principles</h2>
+
+
+    <p> The challenge is to develop an application that tries to increase the user’s participation
         in team sports
         through
-        online communities. Several factors play into the success of this concept. It is not possible to achieve this
+        online communities. Several factors play into the success of this concept. It is not possible to achieve
+        this
         goal
         if the application is not properly designed. To achieve this, design principles of several disciplines are
         applied
-        to achieve a user-centric solution.
-    </div>
-    <h2>User Experience Design</h2>
-    <main>The term "user experience" was first coined by Don Norman in the early 1990s when he was working at Apple
+        to achieve a user-centric solution.</p>
+
+
+    <h3>User Experience Design</h3>
+    <p>The term "user experience" was first coined by Don Norman in the early 1990s when he was working at Apple
         <cite>(NORMAN,
-            2013, P. XIII F.).</cite> User experience comprises all aspects of a user’s interaction with a company, its
+            2013, P. XIII F.).</cite> User experience comprises all aspects of a user’s interaction with a
+        company, its
         services,
         and
-        its products. The focus and most important goal of good user experience is to meet the user’s needs in every
-        aspects. Close cooperation is required between different disciplines, such as engineering, marketing, graphic
+        its products. The focus and most important goal of good user experience is to meet the user’s needs in
+        every
+        aspects. Close cooperation is required between different disciplines, such as engineering, marketing,
+        graphic
         design, industrial design, and interface design <cite>(NORMAN & NIELSEN, N.D.)</cite>.
-    </main>
-    
-        <blockquote style="color:rgb(196, 166, 0);"> »Good design is actually a lot harder to notice than poor design, in part
-            because
-            good
-            designs fit our needs so well that the design is invisible, serving us without drawing attention to itself.
-            Bad
-            design, on the other hand, screams out its inadequacies, making itself very noticeable.«
-        </blockquote>
+    </p>
+
+    <blockquote> »Good design is actually a lot harder to notice than poor design, in part
+        because
+        good
+        designs fit our needs so well that the design is invisible, serving us without drawing attention to
+        itself.
+        Bad
+        design, on the other hand, screams out its inadequacies, making itself very noticeable.«
         <footer><cite>Don Norman</cite></footer>
- 
+    </blockquote>
+    </div>
+
     <figure>
-        <img src="../_data/images/user-experience.png" alt="Bild" width="700" height="600">
-        <figcaption>FIG. 04: PRIMARY FACTORS OF USER EXPERIENCEOWN ILLUSTRATION BASED ON IXDF - USABILITY, 2020
+        <img src="../_data/images/user-experience.png"
+            alt="Primary Factors Of User Eexperienceown Illustration Based On IXDF - USABILITY, 2020">
+        <title>PRIMARY FACTORS OF USER EXPERIENCEOWN ILLUSTRATION BASED ON IXDF - USABILITY, 2020</title>
+        <figcaption>User experience captures everything a user experiences while using a given product, from the
+            visuals, the haptics, and the audio to how the product feels. User experience of a product comprises
+            three primary factors: its look, feel, and usability (IXDF - UX DESIGN, N.D.)
         </figcaption>
     </figure>
-    <section>User Experience Design requires a solid understanding of the psychology and behavior of the user.
+
+
+
+    <p>User Experience Design requires a solid understanding of the psychology and behavior of the user.
         Understanding
         how
-        users perceive a product allows user experience designers to iterate their concepts and better achieve the
+        users perceive a product allows user experience designers to iterate their concepts and better achieve
+        the
         user’s
-        goals. According to Marc Hassenzahl and Sarah Diefenbach’s paper <i>Well-being</i>, <i>Need Fulfillment</i>, and
+        goals. According to Marc Hassenzahl and Sarah Diefenbach’s paper <i>Well-being</i>, <i>Need
+            Fulfillment</i>, and
         <i>Experience
             Design</i>, any positive experience is based on meeting psychological needs. The fulfillment of
         psychological
         needs,
-        such as competence, relatedness, popularity, stimulation and security, contributes to the well-being of the user
+        such as competence, relatedness, popularity, stimulation and security, contributes to the well-being of
+        the user
         and
-        leads to a pleasant user experience. In experience design, these needs are taken as guidelines and inspiration
+        leads to a pleasant user experience. In experience design, these needs are taken as guidelines and
+        inspiration
         in
         the design process <cite>(HASSENZAHL & DIEFENBACH, 2012, P. 1).</cite>
-    </section>
-    <aside> Some of these needs have already been discussed in Chapter 2.1, but in the following, they are considered
+    </p>
+    <p> Some of these needs have already been discussed in Chapter 2.1, but in the following, they are
+        considered
         from
         the
-        perspective of emotion, while additional needs are addressed.</aside>
+        perspective of emotion, while additional needs are addressed.</p>
 
     <dl>
         <dt>Competence</dt>
-        <dd>Competence is the feeling that one’s actions are perceived as capable and effective instead of thinking that
+        <dd>Competence is the feeling that one’s actions are perceived as capable and effective instead of
+            thinking that
             one is incapable and incompetent <cite>(HASSENZAHL & DIEFENBACH, 2012, P. 1).</cite></dd>
 
         <dt>Relatedness</dt>
         <dd>Relatedness is the feeling of having intimate and personal relationships with the people in the
-            environment, rather than feeling lonely or unnoticed <cite>(HASSENZAHL & DIEFENBACH, 2012, P. 1).</cite>
+            environment, rather than feeling lonely or unnoticed <cite>(HASSENZAHL & DIEFENBACH, 2012, P.
+                1).</cite>
         </dd>
 
         <dt>Popularity</dt>
-        <dd>Popularity is the feeling of being respected and influencing others, rather than feeling like a person
+        <dd>Popularity is the feeling of being respected and influencing others, rather than feeling like a
+            person
             whose advice and opinion are ignored <cite>(HASSENZAHL & DIEFENBACH, 2012, P. 1)</cite>.</dd>
 
         <dt>Stimulation</dt>
@@ -163,73 +210,121 @@
             understimulated <cite>(HASSENZAHL & DIEFENBACH, 2012, P. 1).</cite></dd>
 
         <dt>Security</dt>
-        <dd> Security is the feeling of having stability and control over one’s own life, rather than feeling uncertain
-            and threatened by circumstances one cannot control <cite>(HASSENZAHL & DIEFENBACH, 2012, P. 1)</cite>.</dd>
+        <dd> Security is the feeling of having stability and control over one’s own life, rather than feeling
+            uncertain
+            and threatened by circumstances one cannot control <cite>(HASSENZAHL & DIEFENBACH, 2012, P.
+                1)</cite>.</dd>
     </dl>
-    <section>As discussed in Chapter 2.1, the social aspect is an important factor in motivating people to participate
+    <section>As discussed in Chapter 2.1, the social aspect is an important factor in motivating people to
+        participate
         in
         various activities. Thus, it is also an important factor for participation in sports. Since this thesis
         addresses the question of how online sports community apps should be designed to increase the user’s
-        participation in team sports, the focus during the design phase is laid especially on relatedness.</section>
-       
-    <section>In the context of user experience design, needs are also called “user needs”. In addition to the approach
+        participation in team sports, the focus during the design phase is laid especially on relatedness.
+    </section>
+
+    <section>In the context of user experience design, needs are also called “user needs”. In addition to the
+        approach
         of
         Hassenzahl and Diefenbach, other approaches define user needs for good user experience. Design leader
         Stephen P. Anderson, for example, developed the “User Experience Hierarchy of Needs” model <cite>(→ FIG.
             05).</cite>
         Rather than focusing on the psychological side of the user needs, this model is based on a product’s
-        maturity process. Anderson proposes that products proceed through six stages of maturity, during which they
-        can grow from a purely functional product, to a product that is meaningful to the user <cite>(ANDERSON, 2011, P.
+        maturity process. Anderson proposes that products proceed through six stages of maturity, during which
+        they
+        can grow from a purely functional product, to a product that is meaningful to the user <cite>(ANDERSON,
+            2011, P.
             10F.).</cite>
-        <section>
-            </div>
+        </section>
+
+
             <table>
+                <div class="column2">
+                    <thead>
+                    <tbody>
+                        <tr>
+                            <th>Main Focus</th>
+                            <th>Need</th>
+                            <th>Note</th>
+                        </tr>
 
-                <thead>
-                <tbody>
-                    <tr>
-                        <th>Main Focus</th>
-                        <th>Need</th>
-                        <th>Note</th>
-                    </tr>
+                        <tr>
+                            <td rowspan="3">Experience</td>
+                            <td>Meaningful</td>
+                            <td>personal significance</td>
 
-                    <tr>
-                        <td>Experience</td>
-                        <td>Meaningful</td>
-                        <td>personal significance</td>
+                        </tr>
+                        <tr>
 
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td>Pleasurable</td>
-                        <td>memorable experiences</td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td>Convinient</td>
-                        <td>super easy to use,works like i think</td>
-                    </tr>
-                    <tr>
-                        <td>Tasks</td>
-                        <td>Usable</td>
-                        <td>can be used without difficulty</td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td>Reliable</td>
-                        <td>is available and accurate</td>
-                    </tr>
-                    <tr>
-                        <td> </td>
-                        <td>Functional</td>
-                        <td>works as programmed</td>
-                    </tr>
+                            <td>Pleasurable</td>
+                            <td>memorable experiences</td>
+                        </tr>
+                        <tr>
+
+                            <td>Convinient</td>
+                            <td>super easy to use,works like i think</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Tasks</td>
+                            <td>Usable</td>
+                            <td>can be used without difficulty</td>
+                        </tr>
+                        <tr>
+
+                            <td>Reliable</td>
+                            <td>is available and accurate</td>
+                        </tr>
+                        <tr>
+
+                            <td>Functional</td>
+                            <td>works as programmed</td>
+                        </tr>
 
 
-                </tbody>
+                    </tbody>
             </table>
+            </div>
+            </div>
+        </main>
+            <footer id="Kommentar">
+                <form>
+                    <fieldset>
+                        <legend>Persönliche Daten</legend>
+                        <label for="vorname">Vorname</label>
+                        <input type="text" id="vorname" name="vorname" placeholder="vorname">
 
-            <strong><a href="http://127.0.0.1:5500/index.html">Zurück zum Index</a> </strong>
+                        <label for="nachname">Nachname</label>
+                        <input type="text" id="nachname" name="nachname" placeholder="nachname">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example.stuff@gmail.com">
+
+                        <label for="PB">Profilbild</label>
+                        <input type="file" id="PB" name="PB">
+                    </fieldset>
+                    <label for="kommentartext">Ihr Kommentar</label>
+                    <textarea id="kommentartext" name="kommentar"></textarea>
+                    <fieldset>
+                        <label>Soll der Autorenname in einer späteren Anzeige anonymisiert werden?</label>
+                        <input type="radio" name="anon" value="Ja">ja
+                        <input type="radio" name="anon" value="Nein">nein
+                    </fieldset>
+
+                    <label for="Datenschutz">Haben sie die Datenschutzerklärung gelesen?</label>
+                    <input type="checkbox" name="Datenschutz" id="Datenschutz">Ja,ich habe die Datenschutzerklärung
+                    gelesen.
+
+                    <input type="submit" value="Kommentar absenden">
+                    <input type="reset" value="Kommentar zurückesetzen">
+                </form>
+
+
+
+
+
+            </footer>
+
+            <strong><a href="/index.html">Zurück zum Index</a> </strong>
 </body>
 
 </html>
