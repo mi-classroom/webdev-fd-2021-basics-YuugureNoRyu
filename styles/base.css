@@ -1,0 +1,93 @@
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+padding:1rem;
+color:var(--dark);
+line-height: var(--lh-normal);
+
+}
+p,h1,h2,h3,section,dd{
+    margin-bottom: 1rem;
+   
+}
+h1,h2,h3,h4,h5,h6
+{
+font-weight: bold;
+color: var(--darker);
+
+margin-bottom: 1.3rem;
+}
+h1{
+    font-size: var(--xl);
+    padding-bottom: 3.5rem;
+}
+h2{
+    font-size: var(--l);
+    border-bottom:solid #666 5px;
+    
+}h3,dt{
+    font-size: 1.2rem;
+ 
+}
+nav,main,footer,article{
+max-width: 66%;
+    margin-bottom: 2rem;
+}
+img{
+    width: 100%;
+}
+blockquote {
+    width: 80%;
+    font-weight: bolder;
+    color: goldenrod;
+    font-style: italic;
+}
+figcaption {
+    font-style: italic;
+    align-self: center;
+    font-size: var(--xs);
+}table {
+    border-collapse: collapse;
+   padding-bottom: 3rem;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #ddd;
+
+}
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+tr:nth-child(even) {
+    background-color: #dfd9d9;
+}cite {
+    font-size: smaller;
+    font-style: italic;
+}figure{
+    max-width: 54rem;
+    padding-bottom: 0.8rem;
+}
+dt{
+    padding-bottom: 0.3rem;
+color: var(--darker);
+
+}
+fieldset{
+padding-bottom: 0.5rem;
+
+}
+textarea{
+padding:0.7rem
+
+}
+header{
+background-color: hsla(0, 0%, 40%, 0.250);
+max-width: 66%;
+
+}
+dl{padding-bottom: 0.8rem;}

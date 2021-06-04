@@ -3,17 +3,26 @@
 }
 cite {
     font-size: smaller;
+    font-style: italic;
 }
 p {
     text-align: left;
     word-wrap: inherit;
 
 }
-h1,
-h2,h3 {
+h1,h2,h3 {
     font-weight: bold;
     color: gray;
+    font-size: 20px;
+    padding: 30px;
 }
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 20px;
+}
+
 dt {
     font-weight: bolder;
 
@@ -55,4 +64,10 @@ figcaption {
     content: "";
     display: table;
     clear: both;
+}
+.mengentext{
+font-family: sans-serif;
+padding-bottom: 10px;
+line-height: 140%;
+
 }
