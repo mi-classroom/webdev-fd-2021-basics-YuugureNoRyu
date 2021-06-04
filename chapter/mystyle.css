@@ -36,11 +36,6 @@ td {
 tr:nth-child(even) {
     background-color: #f0f0f0;
 }
-tr:hover {
-    background-color: #ddd;
-    ;
-
-}
 blockquote {
     width: 50rem;
     font-weight: bolder;
@@ -50,10 +45,6 @@ blockquote {
 figcaption {
     font-style: italic;
     align-self: center;
-}
-footer {
-    align-self: center;
-
 }
 .column {
     float: left;
