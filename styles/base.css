@@ -1,7 +1,6 @@
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 500;
-    padding: 1rem;
+    font-family: var(--font-normal);
+    padding: var(--m);
     color: var(--dark);
     line-height: var(--lh-normal);
 }
@@ -12,7 +11,7 @@ h2,
 h3,
 section,
 dd {
-    margin-bottom: 1rem;
+    margin-bottom: var(--m);
 }
 
 h1,
@@ -21,14 +20,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+    font-weight: var(--wichtig);
     color: var(--darker);
-    margin-bottom: 1.3rem;
+    margin-bottom: var(--l);
 }
 
 h1 {
     font-size: var(--xl);
-    padding-bottom: 3.5rem;
+    padding-bottom: var(--xxl);
 }
 
 h2 {
@@ -37,25 +36,24 @@ h2 {
 
 h3,
 dt {
-    font-size: 1.2rem;
+    font-size: var(--l);
 }
 
-nav,
 main,
 footer,
 article {
-    max-width: 66%;
-    margin-bottom: 2rem;
+    max-width: var(--normal);
+    margin-bottom: var(--xl);
 }
 
 img {
-    width: 100%;
+    width: var(--voll);
 }
 
 blockquote {
-    width: 80%;
+    width: var(--weit);
     font-weight: bolder;
-    color: goldenrod;
+    color: var(--accenttext);
     font-style: italic;
 }
 
@@ -67,23 +65,22 @@ figcaption {
 
 table {
     border-collapse: collapse;
-    padding-bottom: 3rem;
+    padding-bottom: var(--xxl);
 }
 
 th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #ddd;
+    background-color: var(--background);
 }
 
 td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid var(--background)
 }
 
 tr:nth-child(even) {
-    background-color: #dfd9d9;
+    background-color: var(--backnth);
 }
 
 cite {
@@ -93,60 +90,41 @@ cite {
 
 figure {
     max-width: 54rem;
-    padding-bottom: 0.8rem;
+    padding-bottom: var(--s);
 }
 
 dt {
-    padding-bottom: 0.3rem;
+    padding-bottom: var(--xs);
     color: var(--darker);
 }
 
 fieldset {
-    padding-bottom: 0.5rem;
+    padding-bottom: var(--s);
 }
 
 textarea {
-    padding: 0.7rem
+    padding: var(--s)
 }
 
 header {
-    background-color: hsla(0, 0%, 40%, 0.250);
-    max-width: 66%;
+    max-width: var(--normal);
 }
 
 dl {
-    padding-bottom: 0.8rem;
+    padding-bottom: var(--s);
 }
 
 form {
-    background-color: lightgray;
+    background-color: var(--background);
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    font-size: 1.2em;
+    font-size: var(--l);
     border: 1px solid gainsboro;
     color: teal;
     font-family: inherit;
-    font-weight: 300;
+    font-weight: var(--vw-normal);
     display: block;
-}
-
-nav li {
-    display: inline-block;
-    padding: var(--xxs);
-    background-color: goldenrod;
-    transition: all 0.3s;
-    position: sticky;
-    top 0;
-}
-
-nav li a {
-    color: var(--darker);
-}
-
-nav li :hover a {
-    background-color: var(--darker);
-    color: white;
 }
