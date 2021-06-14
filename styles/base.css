@@ -28,10 +28,12 @@ h6 {
 h1 {
     font-size: var(--xl);
     padding-bottom: var(--xxl);
+    font-size: var(--xl);
 }
 
 h2 {
     font-size: var(--l);
+    font-size: var(--fw-wichtig);
 }
 
 h3,
@@ -47,11 +49,11 @@ article {
 }
 
 img {
-    width: var(--voll);
+    max-width: var(--voll);
 }
 
 blockquote {
-    width: var(--weit);
+    max-width: var(--weit);
     font-weight: bolder;
     color: var(--accenttext);
     font-style: italic;
@@ -96,6 +98,7 @@ figure {
 dt {
     padding-bottom: var(--xs);
     color: var(--darker);
+    max-width: var(--normal);
 }
 
 fieldset {
@@ -127,4 +130,12 @@ form textarea {
     font-family: inherit;
     font-weight: var(--vw-normal);
     display: block;
+}
+
+p {
+    max-width: var(--weit);
+}
+
+i {
+    font-style: italic;
 }
