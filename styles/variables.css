@@ -1,0 +1,38 @@
+:root {
+    /*Abstände*/
+    --xxs: 0.4rem;
+    --xs: 0.6rem;
+    --s: 0.8rem;
+    --m: 1rem;
+    --l: 1.4rem;
+    --xl: 1.8rem;
+    --xxl: 2.2rem;
+    /*Font Weight */
+    --wichtig: bold;
+    --fw-normal: 300;
+    --fw-megawichtig: 500;
+    --fw-wichtig: 400;
+    /*Farben*/
+    --light: #ccc;
+    --lighter: #fff;
+    --dark: #666;
+    --darker: #222;
+    --text-color: var(--darker);
+    --headline-color: var(--dark);
+    --accent: darkgoldenrod;
+    --accenttext: goldenrod;
+    --background: #ddd;
+    --backnth: #dfd9d9;
+    /*Schriftarten*/
+    --font-normal: 'IBM Plex Sans', sans-serif;
+    /*Linienhöhen*/
+    --lh-normal: 130%;
+    --lh-tight: 110%;
+    --lh-loose: 150%;
+    /*Timing*/
+    --slow: 1s;
+    /*Bereiche*/
+    --weit: 80%;
+    --normal: 66%;
+    --voll: 100%;
+}

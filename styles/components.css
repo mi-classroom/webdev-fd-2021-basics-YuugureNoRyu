@@ -1,0 +1,23 @@
+.navigation {
+    overflow: hidden;
+    background-color: var(--accent);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: var(--lighter);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    background: var(--darker);
+    color: var(--lighter);
+    transition: var(--slow);
+}
